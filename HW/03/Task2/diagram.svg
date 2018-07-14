@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400mm"
+   height="250mm"
+   viewBox="0 0 400 250"
+   version="1.1"
+   id="svg4967"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="рисунок.svg">
+  <defs
+     id="defs4961" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="684.00608"
+     inkscape:cy="480.78386"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1045"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4964">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-47)">
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g10">
+      <rect
+         style="fill:#ffffff"
+         x="368"
+         y="38"
+         width="74"
+         height="45"
+         id="rect2" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="368"
+         y="38"
+         width="74"
+         height="45"
+         id="rect4" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="405"
+         y="65.300003"
+         id="text8">
+        <tspan
+           x="405"
+           y="65.300003"
+           id="tspan6">main()</tspan>
+      </text>
+    </g>
+    <rect
+       style="fill:#ffffff;stroke-width:0.46720743"
+       x="77.74102"
+       y="82.248253"
+       width="124.873"
+       height="25.656305"
+       id="rect16" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:0.97245258"
+       x="77.750412"
+       y="82.257645"
+       width="135.34557"
+       height="25.637524"
+       id="rect18" />
+    <text
+       font-size="12.7998"
+       style="font-style:normal;font-weight:normal;font-size:5.95857525px;font-family:sans-serif;text-anchor:middle;fill:#000000;stroke-width:0.46552092"
+       x="148.83307"
+       y="91.666466"
+       id="text24"
+       transform="scale(0.97980331,1.020613)">
+      <tspan
+         style="stroke-width:0.46552092"
+         x="148.83307"
+         y="91.666466"
+         id="tspan20">start_up (short *)</tspan>
+      <tspan
+         style="stroke-width:0.46552092"
+         x="148.83307"
+         y="99.114792"
+         id="tspan22">Начать слушать web соединения на порту</tspan>
+    </text>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g34">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="405"
+         y1="83"
+         x2="381.672"
+         y2="101.498"
+         id="line28" />
+      <polygon
+         style="fill:#000000"
+         points="386.737,103.863 375.795,106.158 380.524,96.0271 381.672,101.498 "
+         id="polygon30" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="386.737,103.863 375.795,106.158 380.524,96.0271 381.672,101.498 "
+         id="polygon32" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g44">
+      <rect
+         style="fill:#ffffff"
+         x="478"
+         y="190"
+         width="134"
+         height="46"
+         id="rect36" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="478"
+         y="190"
+         width="134"
+         height="46"
+         id="rect38" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="545"
+         y="217.8"
+         id="text42">
+        <tspan
+           x="545"
+           y="217.8"
+           id="tspan40">accept(...)</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g58">
+      <rect
+         style="fill:#ffffff"
+         x="619.95001"
+         y="78.5"
+         width="229.10001"
+         height="70"
+         id="rect46" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="619.95001"
+         y="78.5"
+         width="229.10001"
+         height="70"
+         id="rect48" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="734.5"
+         y="102.3"
+         id="text56">
+        <tspan
+           x="734.5"
+           y="102.3"
+           id="tspan50">error_die (char*)</tspan>
+        <tspan
+           x="734.5"
+           y="118.3"
+           id="tspan52">Напечатать сообщение об ошибке,</tspan>
+        <tspan
+           x="734.5"
+           y="134.3"
+           id="tspan54">выйти из программы</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.37022904,0,0,0.44250576,21.999132,37.378957)"
+       id="g66">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="509.94299"
+         y1="134.547"
+         x2="539.797"
+         y2="181.771"
+         id="line60" />
+      <polygon
+         style="fill:#000000"
+         points="543.805,188.11 534.235,182.329 539.797,181.771 542.688,176.986 "
+         id="polygon62" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="543.805,188.11 534.235,182.329 539.797,181.771 542.688,176.986 "
+         id="polygon64" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g74">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="612"
+         y1="213"
+         x2="725.88501"
+         y2="153.036"
+         id="line68" />
+      <polygon
+         style="fill:#000000"
+         points="721.344,149.777 732.521,149.542 726.003,158.625 725.885,153.036 "
+         id="polygon70" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="721.344,149.777 732.521,149.542 726.003,158.625 725.885,153.036 "
+         id="polygon72" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g86">
+      <rect
+         style="fill:#ffffff"
+         x="340.88901"
+         y="283.272"
+         width="186.05"
+         height="63"
+         id="rect76" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="340.88901"
+         y="283.272"
+         width="186.05"
+         height="63"
+         id="rect78" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="433.914"
+         y="311.57199"
+         id="text84">
+        <tspan
+           x="433.914"
+           y="311.57199"
+           id="tspan80">accept_request (socket)</tspan>
+        <tspan
+           x="433.914"
+           y="327.57199"
+           id="tspan82">Обработать запрос клиента</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g98">
+      <rect
+         style="fill:#ffffff"
+         x="495.54599"
+         y="412.461"
+         width="193.8"
+         height="54"
+         id="rect88" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="495.54599"
+         y="412.461"
+         width="193.8"
+         height="54"
+         id="rect90" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="592.44598"
+         y="436.26099"
+         id="text96">
+        <tspan
+           x="592.44598"
+           y="436.26099"
+           id="tspan92">get_line (socket, char* buffer)</tspan>
+        <tspan
+           x="592.44598"
+           y="452.26099"
+           id="tspan94">Считать строку из сокета</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g114">
+      <rect
+         style="fill:#ffffff"
+         x="97.6017"
+         y="183.16901"
+         width="211.125"
+         height="86"
+         id="rect100" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="97.6017"
+         y="183.16901"
+         width="211.125"
+         height="86"
+         id="rect102" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="203.164"
+         y="206.96899"
+         id="text112">
+        <tspan
+           x="203.164"
+           y="206.96899"
+           id="tspan104">unimplemented (socket)</tspan>
+        <tspan
+           x="203.164"
+           y="222.96899"
+           id="tspan106">Сказать, что запрос подобного</tspan>
+        <tspan
+           x="203.164"
+           y="238.96899"
+           id="tspan108">типа не реализован</tspan>
+        <tspan
+           x="203.164"
+           y="254.96899"
+           id="tspan110">(если не GET и не POST)</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g122">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="308.72699"
+         y1="226.16901"
+         x2="379.522"
+         y2="277.55301"
+         id="line116" />
+      <polygon
+         style="fill:#000000"
+         points="380.436,272.038 385.592,281.958 374.562,280.131 379.522,277.553 "
+         id="polygon118" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="380.436,272.038 385.592,281.958 374.562,280.131 379.522,277.553 "
+         id="polygon120" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g134">
+      <rect
+         style="fill:#ffffff"
+         x="139.894"
+         y="294.146"
+         width="129.64999"
+         height="54"
+         id="rect124" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="139.894"
+         y="294.146"
+         width="129.64999"
+         height="54"
+         id="rect126" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="204.71899"
+         y="317.94601"
+         id="text132">
+        <tspan
+           x="204.71899"
+           y="317.94601"
+           id="tspan128">not_found (socket)</tspan>
+        <tspan
+           x="204.71899"
+           y="333.94601"
+           id="tspan130">Ошибка 404</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g146">
+      <rect
+         style="fill:#ffffff"
+         x="191.48"
+         y="390.457"
+         width="231.7"
+         height="54"
+         id="rect136" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="191.48"
+         y="390.457"
+         width="231.7"
+         height="54"
+         id="rect138" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="307.32999"
+         y="414.25699"
+         id="text144">
+        <tspan
+           x="307.32999"
+           y="414.25699"
+           id="tspan140">serve_file (socket, char*)</tspan>
+        <tspan
+           x="307.32999"
+           y="430.25699"
+           id="tspan142">Послать статический файл клиенту</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g154">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="269.54401"
+         y1="321.146"
+         x2="331.59"
+         y2="301.905"
+         id="line148" />
+      <polygon
+         style="fill:#000000"
+         points="327.721,297.87 338.753,299.684 330.683,307.421 331.59,301.905 "
+         id="polygon150" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="327.721,297.87 338.753,299.684 330.683,307.421 331.59,301.905 "
+         id="polygon152" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g162">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="307.32999"
+         y1="390.457"
+         x2="378.87701"
+         y2="350.97501"
+         id="line156" />
+      <polygon
+         style="fill:#000000"
+         points="374.273,347.806 385.444,347.352 379.104,356.561 378.877,350.975 "
+         id="polygon158" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="374.273,347.806 385.444,347.352 379.104,356.561 378.877,350.975 "
+         id="polygon160" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g174">
+      <rect
+         style="fill:#ffffff"
+         x="597.62701"
+         y="304.5"
+         width="177.95"
+         height="54"
+         id="rect164" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="597.62701"
+         y="304.5"
+         width="177.95"
+         height="54"
+         id="rect166" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="686.60199"
+         y="328.29999"
+         id="text172">
+        <tspan
+           x="686.60199"
+           y="328.29999"
+           id="tspan168">execute_cgi (socket, char*)</tspan>
+        <tspan
+           x="686.60199"
+           y="344.29999"
+           id="tspan170">Выполнить CGI скрипт</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g182">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="597.62701"
+         y1="331.5"
+         x2="536.67401"
+         y2="330.65601"
+         id="line176" />
+      <polygon
+         style="fill:#000000"
+         points="539.105,335.69 529.175,330.552 539.243,325.691 536.674,330.656 "
+         id="polygon178" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="539.105,335.69 529.175,330.552 539.243,325.691 536.674,330.656 "
+         id="polygon180" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g190">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         d="m 478,213 c 6.01,0 -59.984,22.914 -47.185,61.042"
+         id="path184" />
+      <polygon
+         style="fill:#000000"
+         points="434.76,270.08 433.202,281.152 425.28,273.263 430.815,274.042 "
+         id="polygon186" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="434.76,270.08 433.202,281.152 425.28,273.263 430.815,274.042 "
+         id="polygon188" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g198">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         d="m 480.426,283.272 c 5.84,0 64.676,-16.629 64.606,-37.536"
+         id="path192" />
+      <polygon
+         style="fill:#000000"
+         points="540.041,248.253 545.007,238.236 550.041,248.219 545.032,245.736 "
+         id="polygon194" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="540.041,248.253 545.007,238.236 550.041,248.219 545.032,245.736 "
+         id="polygon196" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g206">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         d="m 592.446,412.461 c 6.673,0 27.132,-12.734 44.999,-45.418"
+         id="path200" />
+      <polygon
+         style="fill:#000000"
+         points="631.858,366.838 641.042,360.462 640.633,371.635 637.445,367.043 "
+         id="polygon202" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="631.858,366.838 641.042,360.462 640.633,371.635 637.445,367.043 "
+         id="polygon204" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g218">
+      <rect
+         style="fill:#ffffff"
+         x="636.36798"
+         y="225.32401"
+         width="151.14999"
+         height="54"
+         id="rect208" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="636.36798"
+         y="225.32401"
+         width="151.14999"
+         height="54"
+         id="rect210" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="711.94299"
+         y="249.12399"
+         id="text216">
+        <tspan
+           x="711.94299"
+           y="249.12399"
+           id="tspan212">bad_request (socket)</tspan>
+        <tspan
+           x="711.94299"
+           y="265.12399"
+           id="tspan214">Ошибка 400</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g226">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="711.94299"
+         y1="279.32401"
+         x2="693.50897"
+         y2="297.638"
+         id="line220" />
+      <polygon
+         style="fill:#000000"
+         points="698.806,299.423 688.188,302.924 691.758,292.329 693.509,297.638 "
+         id="polygon222" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="698.806,299.423 688.188,302.924 691.758,292.329 693.509,297.638 "
+         id="polygon224" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g240">
+      <rect
+         style="fill:#ffffff"
+         x="728.78003"
+         y="387.81299"
+         width="196.8"
+         height="70"
+         id="rect228" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="728.78003"
+         y="387.81299"
+         width="196.8"
+         height="70"
+         id="rect230" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="827.17999"
+         y="411.61301"
+         id="text238">
+        <tspan
+           x="827.17999"
+           y="411.61301"
+           id="tspan232">cannot_execute (socket)</tspan>
+        <tspan
+           x="827.17999"
+           y="427.61301"
+           id="tspan234">Сообщить, что не получается</tspan>
+        <tspan
+           x="827.17999"
+           y="443.61301"
+           id="tspan236">исполнить CGI скрипт</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g248">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="777.97998"
+         y1="387.81299"
+         x2="739.34497"
+         y2="363.66101"
+         id="line242" />
+      <polygon
+         style="fill:#000000"
+         points="738.815,369.226 732.986,359.685 744.115,360.746 739.345,363.661 "
+         id="polygon244" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="738.815,369.226 732.986,359.685 744.115,360.746 739.345,363.661 "
+         id="polygon246" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g256">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         d="m 543.996,412.461 c -10.568,-4.01 -58.55,-38.361 -61.841,-56.608"
+         id="path250" />
+      <polygon
+         style="fill:#000000"
+         points="477.678,359.201 480.823,348.472 487.519,357.426 482.155,355.853 "
+         id="polygon252" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="477.678,359.201 480.823,348.472 487.519,357.426 482.155,355.853 "
+         id="polygon254" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g264">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="204.71899"
+         y1="348.146"
+         x2="242.336"
+         y2="383.763"
+         id="line258" />
+      <polygon
+         style="fill:#000000"
+         points="243.958,378.413 247.782,388.92 237.083,385.675 242.336,383.763 "
+         id="polygon260" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="243.958,378.413 247.782,388.92 237.083,385.675 242.336,383.763 "
+         id="polygon262" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g272">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         d="m 495.546,439.461 c -4.647,3.341 -52.63,12.065 -63.2,8.279"
+         id="path266" />
+      <polygon
+         style="fill:#000000"
+         points="433.014,453.29 425.286,445.211 436.386,443.876 432.346,447.74 "
+         id="polygon268" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="433.014,453.29 425.286,445.211 436.386,443.876 432.346,447.74 "
+         id="polygon270" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g284">
+      <rect
+         style="fill:#ffffff"
+         x="63.1371"
+         y="480.328"
+         width="226.3"
+         height="54"
+         id="rect274" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="63.1371"
+         y="480.328"
+         width="226.3"
+         height="54"
+         id="rect276" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="176.287"
+         y="504.12799"
+         id="text282">
+        <tspan
+           x="176.287"
+           y="504.12799"
+           id="tspan278">headers (socket, char *)</tspan>
+        <tspan
+           x="176.287"
+           y="520.12799"
+           id="tspan280">Вернуть HTTP заголовок по файлу</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g292">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="176.287"
+         y1="480.328"
+         x2="240.66499"
+         y2="448.745"
+         id="line286" />
+      <polygon
+         style="fill:#000000"
+         points="236.218,445.357 247.398,445.442 240.622,454.335 240.665,448.745 "
+         id="polygon288" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="236.218,445.357 247.398,445.442 240.622,454.335 240.665,448.745 "
+         id="polygon290" />
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g306">
+      <rect
+         style="fill:#ffffff"
+         x="312.92099"
+         y="478.871"
+         width="153.987"
+         height="70"
+         id="rect294" />
+      <rect
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x="312.92099"
+         y="478.871"
+         width="153.987"
+         height="70"
+         id="rect296" />
+      <text
+         font-size="12.7998"
+         style="font-style:normal;font-weight:normal;font-size:12.79979992px;font-family:sans-serif;text-anchor:middle;fill:#000000"
+         x="389.914"
+         y="502.67099"
+         id="text304">
+        <tspan
+           x="389.914"
+           y="502.67099"
+           id="tspan298">cat (socket, char *)</tspan>
+        <tspan
+           x="389.914"
+           y="518.67102"
+           id="tspan300">Вернуть в сокет</tspan>
+        <tspan
+           x="389.914"
+           y="534.67102"
+           id="tspan302">содержимое файла</tspan>
+      </text>
+    </g>
+    <g
+       transform="matrix(0.45611895,0,0,0.47511677,-24.780944,31.150826)"
+       id="g314">
+      <line
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         x1="389.914"
+         y1="478.871"
+         x2="316.31699"
+         y2="448.202"
+         id="line308" />
+      <polygon
+         style="fill:#000000"
+         points="316.702,453.779 309.395,445.317 320.548,444.548 316.317,448.202 "
+         id="polygon310" />
+      <polygon
+         style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+         points="316.702,453.779 309.395,445.317 320.548,444.548 316.317,448.202 "
+         id="polygon312" />
+    </g>
+  </g>
+</svg>
