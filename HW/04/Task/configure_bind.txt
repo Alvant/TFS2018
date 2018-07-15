@@ -1,4 +1,4 @@
-/etc/bind/named.conf.options
+/etc/named.conf
   Добавляем строчки для некоей дополнительной безопасности
   (https://wiki.meurisse.org/wiki/Bind)
 
@@ -10,7 +10,7 @@
   }
 
 
-/etc/bind/named.conf.options
+/etc/named.conf
   Добавляем блок rate-limit
 
   options {
@@ -23,7 +23,7 @@
   }
 
 
-/etc/bind/named.conf.options
+/etc/named.conf
   Слушаем не только с localhost (а со всех IP)
   То же и для IPv6
   Указываем IP, с которых допустимы рекурсивные запросы
