@@ -45,8 +45,8 @@ sudo systemctl status bind9.service
   Проверка, что всё ОК
 
 
-Добавляем зону fintechtestzone.
-Создаём /etc/bind/master/fintechtestzone.
+Добавляем зону fintechtestzone
+Создаём /var/named/fintechtestzone
   $ORIGIN fintech-admin.m1.tinkoff.cloud
   $TTL 1d ; Time a cache will keep responses
 
@@ -69,10 +69,10 @@ sudo systemctl status bind9.service
 
 
 Активируем файл зоны
-/etc/bind/named.conf.local
+/etc/named.conf
   zone "fintechtestzone" {
       type master;
-      file "/etc/bind/master/fintechtestzone";
+      file "/var/named/fintechtestzone";
 
       # Notify secondary servers when zone is changed
       notify yes;
@@ -81,6 +81,7 @@ sudo systemctl status bind9.service
 
 Перезагружаем bind
 sudo rndc reconfig
+(или systemctl restart named.service ?)
 
 
 Автоматическая загрузка при старте системы
