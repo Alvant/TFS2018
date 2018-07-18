@@ -112,7 +112,7 @@ zone "180.219.10.in-addr.arpa" {
 
 
 
-**/etc/named/zones **
+**/etc/named/zones**
 
 Папка с файлами зон
 
@@ -123,7 +123,7 @@ sudo mkdir /etc/named/zones
 
 
 
-**/etc/named/zones/db.fintechtestzone **
+**/etc/named/zones/db.fintechtestzone**
 
 Файл зоны fintechtestzone.
 
@@ -150,7 +150,7 @@ s-01    IN    TXT     "The hammer of the gods will drive our ships to new lands"
 
 
 
-**/etc/named/zones/db.10.219.180 **
+**/etc/named/zones/db.10.219.180**
 
 Файл для обратной зоны (reverse zone file).
 
@@ -175,7 +175,7 @@ $TTL 1d             ; Time a cache will keep responses
 
 
 
-**sudo named-checkconf **
+**sudo named-checkconf**
 
 Проверяем синтаксис в named.conf* файлах
 
