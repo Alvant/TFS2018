@@ -1,7 +1,6 @@
-$ORIGIN fintech-admin.m1.tinkoff.cloud.
 $TTL 1d             ; Time when cache will keep responses
 
-@    IN    SOA    s-01    zonemaster01 (
+@    IN    SOA    zonemaster01    zonemaster01 (
          2018071800 ; Serial
          12h        ; Refresh: frequency of zone transfer from slave
          15m        ; Retry: delay before slave retries after a zone transfer failure
@@ -10,9 +9,9 @@ $TTL 1d             ; Time when cache will keep responses
 )
 
 ; name server - NS record
-@       IN    NS      s-01
+@       IN    NS      s-01.fintech-admin.m1.tinkoff.cloud.
 
 ; name server - A, AAAA, TXT records
-s-01    IN    A       10.219.180.2
-s-01    IN    AAAA    fe80::6d:4bff:fe11:d108
-s-01    IN    TXT     "The hammer of the gods will drive our ships to new lands"
+s-01.fintech-admin.m1.tinkoff.cloud.    IN    A       10.219.180.2
+s-01.fintech-admin.m1.tinkoff.cloud.    IN    AAAA    fe80::6d:4bff:fe11:d108
+s-01.fintech-admin.m1.tinkoff.cloud.    IN    TXT     "The hammer of the gods will drive our ships to new lands"
