@@ -64,16 +64,19 @@ options {
 }
 ```
 
-Слушаем не только с localhost (а со всех IP). То же и для IPv6.
-Указываем IP, с которых допустимы рекурсивные запросы.
+Слушаем не только с localhost, а со всех IP.
+
+IPv6 не занимаемся, слушаем только localhost.
+
+Отключаем возможность рекурсивных запросов (делаем ведь Authoritative DNS server?).
 
 ```bash
 options {
     ...
     
     listen-on port 53 { any; };
-    listen-on-v6 port 53 { any; };
-    allow-recursion { 127.0.0.1; ::1; };
+    listen-on-v6 port 53 { ::1; };
+    recursion no;
     
     ...
 }
@@ -94,7 +97,7 @@ include "/etc/named/named.conf.local";
 ```bash
 zone "fintechtestzone" {
     type master;
-    file "/etc/named/zones/db.fintechtestzone."; # zone file path
+    file "/etc/named/zones/db.fintechtestzone"; # zone file path
 };
 ```
 
@@ -137,7 +140,7 @@ $TTL 1d             ; Time a cache will keep responses
 )
 
 ; name server - NS record
-        IN    NS      s-01
+@       IN    NS      s-01
 
 ; name server - A, AAAA, TXT records
 s-01    IN    A       10.219.180.2
@@ -164,10 +167,10 @@ $TTL 1d             ; Time a cache will keep responses
 )
 
 ; NS record
-        IN    NS      s-01
+@     IN    NS      s-01
 
 ; PTR record
-12    IN      PTR     s-01    ; 10.219.180.12
+12    IN    PTR     s-01    ; 10.219.180.12
 ```
 
 
@@ -207,5 +210,5 @@ $TTL 1d             ; Time a cache will keep responses
 Ресурсы
 
 * https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-centos-7
-
 * https://wiki.meurisse.org/wiki/Bind
+* https://linuxconfig.org/linux-dns-server-bind-configuration
