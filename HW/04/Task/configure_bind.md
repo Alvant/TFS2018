@@ -128,11 +128,10 @@ sudo mkdir /etc/named/zones
 Файл зоны fintechtestzone.
 
 ```bash
-$ORIGIN fintech-admin.m1.tinkoff.cloud.
 $TTL 1d             ; Time a cache will keep responses
 
-@    IN    SOA    s-01    zonemaster01 (
-         2018071800 ; Serial
+@    IN    SOA    s-01.fintechtestzone.    admin.fintechtestzone. (
+         3 ; Serial
          12h        ; Refresh: frequency of zone transfer from slave
          15m        ; Retry: delay before slave retries after a zone transfer failure
          4w         ; Expire: time a slave will keep the data in case it cannot contact the master
@@ -140,12 +139,12 @@ $TTL 1d             ; Time a cache will keep responses
 )
 
 ; name server - NS record
-@       IN    NS      s-01
+@    IN    NS      s-01.fintech-admin.m1.tinkoff.cloud.
 
 ; name server - A, AAAA, TXT records
-s-01    IN    A       10.219.180.2
-s-01    IN    AAAA    fe80::6d:4bff:fe11:d108
-s-01    IN    TXT     "The hammer of the gods will drive our ships to new lands"
+fintechtestzone.    IN    A       10.219.180.12
+fintechtestzone.    IN    AAAA    fe80::6d:4bff:fe11:d108
+fintechtestzone.    IN    TXT     "The hammer of the gods will drive our ships to new lands"
 ```
 
 
@@ -155,10 +154,9 @@ s-01    IN    TXT     "The hammer of the gods will drive our ships to new lands"
 Файл для обратной зоны (reverse zone file).
 
 ```bash
-$ORIGIN fintech-admin.m1.tinkoff.cloud.
 $TTL 1d             ; Time a cache will keep responses
 
-@    IN    SOA    s-01    zonemaster01 (
+@    IN    SOA    s-01.fintechtestzone.    admin.fintechtestzone. (
          2018071800 ; Serial
          12h        ; Refresh: frequency of zone transfer from slave
          15m        ; Retry: delay before slave retries after a zone transfer failure
@@ -167,10 +165,10 @@ $TTL 1d             ; Time a cache will keep responses
 )
 
 ; NS record
-@     IN    NS      s-01
+@     IN    NS      s-01.fintech-admin.m1.tinkoff.cloud.
 
 ; PTR record
-12    IN    PTR     s-01    ; 10.219.180.12
+12    IN    PTR     fintechtestzone.    ; 10.219.180.12
 ```
 
 
