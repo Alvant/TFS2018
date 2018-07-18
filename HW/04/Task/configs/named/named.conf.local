@@ -1,0 +1,9 @@
+zone "fintechtestzone" {
+    type master;
+    file "/etc/named/zones/db.fintechtestzone."; # zone file path
+};
+
+zone "180.219.10.in-addr.arpa" {
+    type master;
+    file "/etc/named/zones/db.10.219.180";  # 10.219.180.12/26 subnet
+};

@@ -1,0 +1,16 @@
+$ORIGIN fintech-admin.m1.tinkoff.cloud.
+$TTL 1d             ; Time when cache will keep responses
+
+@    IN    SOA    s-01    zonemaster01 (
+         2018071800 ; Serial
+         12h        ; Refresh: frequency of zone transfer from slave
+         15m        ; Retry: delay before slave retries after a zone transfer failure
+         4w         ; Expire: time a slave will keep the data in case it cannot contact the master
+         1h         ; Negative Cache TTL: time a cache will keep negative responses (NXDOMAIN)
+)
+
+; NS record
+@     IN    NS      s-01
+
+; PTR record
+12    IN    PTR     s-01    ; 10.219.180.12
