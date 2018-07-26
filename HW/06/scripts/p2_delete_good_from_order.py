@@ -10,7 +10,6 @@ sql_query = """DELETE FROM order_items
 WHERE
   order_id = %s AND
   good_id = (SELECT good_id FROM goods WHERE goods.name = %s)
-)
 """
 
 def parse_args():
