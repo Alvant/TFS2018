@@ -43,11 +43,11 @@ def extract_all_orders_info():
 
         for idx, row in enumerate(rows):
           print(row)
-          pd.loc[idx] = row
+          df.loc[idx] = row
 
         print('')
 
-        pd.to_csv(info_file, encoding='utf8')
+        df.to_csv(info_file, encoding='utf8')
 
         # conn.commit()
 
