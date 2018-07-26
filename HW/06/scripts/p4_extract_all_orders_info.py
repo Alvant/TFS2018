@@ -43,7 +43,7 @@ def extract_all_orders_info():
 
         for idx, row in enumerate(rows):
           print(row)
-          df.loc[idx] = row
+          df.loc[idx] = row[1:]
 
         print('')
 
