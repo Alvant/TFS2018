@@ -16,6 +16,9 @@ VALUES (
 """
 
 def parse_args():
+  good_name = None
+  order_id = None
+
   parser = argparse.ArgumentParser()
 
   parser.add_argument(
@@ -34,7 +37,12 @@ def parse_args():
     help='id of an order to add the good into'
   )
 
-  return parser.parse_args()
+  parser.parse_args()
+
+  return {
+    'good_name': good_name,
+    'order_id': order_id
+  }
 
 
 def insert_good_in_order(good_name, order_id):
