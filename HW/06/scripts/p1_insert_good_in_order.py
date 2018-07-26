@@ -50,7 +50,7 @@ def insert_good_in_order(good_name, order_id):
         cur = conn.cursor()
 
         cur.execute('SELECT good_id FROM goods WHERE goods.name = "%s"', (good_name))
-        good_id = cur.fetchone()[]
+        good_id = cur.fetchone()[0]
         print('FYI: good', good_name, 'id is', str(good_id))
 
         print('SQL query to be executed:', sql_query % sql_query_args)
