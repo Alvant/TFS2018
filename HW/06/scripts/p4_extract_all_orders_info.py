@@ -7,7 +7,7 @@ from config import config
 
 info_file = './outputs/orders_info.csv'
 
-columns_names_to_write_in_file = ['First Name', 'Last Name', 'Product', 'Vendor', 'Quantity']
+columns_names_to_write_in_file = ['Order No.', 'First Name', 'Last Name', 'Product', 'Vendor', 'Quantity']
 
 sql_query = """SELECT orders.order_id, first_nm, last_nm, goods.name, vendor, quantity
 FROM customers
@@ -43,7 +43,7 @@ def extract_all_orders_info():
 
         for idx, row in enumerate(rows):
           print(row)
-          df.loc[idx] = row[1:]
+          df.loc[idx] = row
 
         print('')
 
