@@ -49,16 +49,16 @@ def insert_good_in_order(good_name, order_id):
  
         cur = conn.cursor()
 
-        print('Try to find good_id...')
+        print("Trying to find the good's id...")
         cur.execute('SELECT good_id FROM goods WHERE goods.name = %s', (good_name,))
         good_id = cur.fetchone()[0]
         print('Done!')
-        print('Good ' + good_name + "'s" + ' id is ' + str(good_id))
+        print('Good "' + good_name + '"\'s' + ' id is ' + str(good_id))
 
         print('SQL query to be executed:', sql_query % sql_query_args)
 
         cur.execute(sql_query, sql_query_args)
-        # conn.commit()
+        conn.commit()
 
         cur.close()
     except (Exception, psycopg2.DatabaseError) as error:
@@ -66,7 +66,7 @@ def insert_good_in_order(good_name, order_id):
     finally:
         if conn is not None:
             conn.close()
-            print('Database connection closed.')
+            print('Database connection closed')
  
  
 if __name__ == '__main__':
