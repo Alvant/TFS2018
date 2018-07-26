@@ -5,7 +5,7 @@ import pandas as pd
 import psycopg2
 from config import config
 
-info_file = './orders_info.csv'
+info_file = './outputs/orders_info.csv'
 
 columns_names_to_write_in_file = ['First Name', 'Last Name', 'Product', 'Vendor', 'Quantity']
 
@@ -47,7 +47,7 @@ def extract_all_orders_info():
 
         print('')
 
-        df.to_csv(info_file, encoding='utf8')
+        df.to_csv(info_file, index=False, encoding='utf8')
 
         # conn.commit()
 
