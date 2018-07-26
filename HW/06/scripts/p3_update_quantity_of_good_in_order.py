@@ -6,7 +6,8 @@ import argparse
 import psycopg2
 from config import config
 
-sql_query = """DELETE FROM order_items
+sql_query = """UPDATE order_items
+SET quantity = %s
 WHERE
   order_id = %s AND
   good_id = (SELECT good_id FROM goods WHERE goods.name = %s)
@@ -19,21 +20,28 @@ def parse_args():
     'good_name',
     action='store',
     type=str,
-    help='name of some good to delete from order'
+    help='name of some good which quantity is to be modified'
   )
 
   parser.add_argument(
     'order_id',
     action='store',
     type=int,
-    help='id of an order to remove the good from'
+    help='id of an order where to modify the quantity of good'
+  )
+
+  parser.add_argument(
+    'quantity',
+    action='store',
+    type=str,
+    help='quantity of good'
   )
 
   return parser.parse_args()
 
 
-def delete_good_from_order(good_name, order_id):
-    sql_query_args = (order_id, good_name)
+def update_quantity_of_good_in_order(good_name, order_id, quantity):
+    sql_query_args = (quantity, order_id, good_name)
     conn = None
 
     try:
@@ -73,7 +81,8 @@ if __name__ == '__main__':
 
     print('Arguments got:', args)
 
-    delete_good_from_order(
+    update_quantity_of_good_in_order(
       good_name=args.good_name,
-      order_id=args.order_id
+      order_id=args.order_id,
+      quantity=args.quantity
     )
