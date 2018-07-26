@@ -1,3 +1,4 @@
 https://wiki.archlinux.org/index.php/PostgreSQL_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)
 http://www.postgresqltutorial.com/postgresql-python/
 http://initd.org/psycopg/docs/usage.html
+https://stackoverflow.com/questions/25148693/need-help-to-change-postgresql-port-on-centos-7
