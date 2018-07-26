@@ -10,7 +10,7 @@ sql_query = """INSERT INTO order_items
 VALUES (
   DEFAULT,
   %s,
-  (SELECT good_id FROM goods WHERE goods.name = %s),
+  (SELECT good_id FROM goods WHERE goods.name = "%s"),
   1
 )
 """
@@ -48,6 +48,10 @@ def insert_good_in_order(good_name, order_id):
         print('Connected!')
  
         cur = conn.cursor()
+
+        cur.execute('SELECT good_id FROM goods WHERE goods.name = "%s"', (good_name))
+        good_id = cur.fetchone()[]
+        print('FYI: good', good_name, 'id is', str(good_id))
 
         print('SQL query to be executed:', sql_query % sql_query_args)
 
