@@ -50,7 +50,7 @@ def update_quantity_of_good_in_order(good_name, order_id, quantity):
         print('Connecting to the PostgreSQL database...')
         conn = psycopg2.connect(**params)
 
-        print('Connected!')
+        print('Connected!' + '\n')
  
         cur = conn.cursor()
 
@@ -58,14 +58,14 @@ def update_quantity_of_good_in_order(good_name, order_id, quantity):
         cur.execute('SELECT good_id FROM goods WHERE goods.name = %s', (good_name,))
         good_id = cur.fetchone()[0]
         print('Done!')
-        print('Good "' + good_name + '"\'s' + ' id is ' + str(good_id))
+        print('Good "' + good_name + '"\'s' + ' id is ' + str(good_id) + '\n')
 
-        print('SQL query to be executed:', sql_query % sql_query_args)
+        print('SQL query to be executed:' + '\n', sql_query % sql_query_args)
 
         cur.execute(sql_query, sql_query_args)
         conn.commit()
 
-        print('Commited!')
+        print('Commited!' + '\n')
 
         cur.close()
     except (Exception, psycopg2.DatabaseError) as error:
