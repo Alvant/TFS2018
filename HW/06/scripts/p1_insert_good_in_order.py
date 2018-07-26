@@ -51,7 +51,7 @@ def insert_good_in_order(good_name, order_id):
 
         print('SQL query to be executed:', sql_query % sql_query_args)
 
-        cur.execute(sql, sql_query_args)
+        cur.execute(sql_query, sql_query_args)
         # conn.commit()
 
         cur.close()
