@@ -1,12 +1,15 @@
 from __future__ import print_function
 
-import sys
-import argparse
+import pandas as pd
 
 import psycopg2
 from config import config
 
-sql_query = """SELECT first_nm, last_nm, goods.name, quantity
+info_file = './orders_info.csv'
+
+columns_names_to_write_in_file = ['First Name', 'Last Name', 'Product', 'Vendor', 'Quantity']
+
+sql_query = """SELECT orders.order_id, first_nm, last_nm, goods.name, vendor, quantity
 FROM customers
 JOIN orders
   ON customers.cust_id = orders.cust_id
@@ -33,12 +36,18 @@ def extract_all_orders_info():
         print(sql_query)
 
         cur.execute(sql_query)
+        rows = cur.fetchall()
+        df = pd.DataFrame(columns=columns_names_to_write_in_file)
 
         print('Extracted rows:')
-        rows = cur.fetchall()
-        for row in rows:
+
+        for idx, row in enumerate(rows):
           print(row)
+          pd.loc[idx] = row
+
         print('')
+
+        pd.to_csv(info_file, encoding='utf8')
 
         # conn.commit()
 
