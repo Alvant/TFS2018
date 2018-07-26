@@ -9,37 +9,37 @@ from config import config
 
 sql_query = """INSERT INTO order_items
 VALUES (
-	DEFAULT,
-	%s,
-	(SELECT good_id FROM goods WHERE goods.name = %s),
-	1
+  DEFAULT,
+  %s,
+  (SELECT good_id FROM goods WHERE goods.name = %s),
+  1
 )
 """
 
 def parse_args():
-	parser = argparse.ArgumentParser()
+  parser = argparse.ArgumentParser()
 
-	parser.add_argument(
-		'--good_name',
-		action='store',
-		dest=good_name,
-		type=str,
-		help='name of some good to add in order'
-	)
+  parser.add_argument(
+    '--good_name',
+    action='store',
+    dest=good_name,
+    type=str,
+    help='name of some good to add in order'
+  )
 
-	parser.add_argument(
-		'--order_id',
-		action='store',
-		dest=order_id,
-		type=int,
-		help='id of an order to add the good into'
-	)
+  parser.add_argument(
+    '--order_id',
+    action='store',
+    dest=order_id,
+    type=int,
+    help='id of an order to add the good into'
+  )
 
-	return parser.parse_args()
+  return parser.parse_args()
 
 
 def insert_good_in_order(good_name, order_id):
-	  sql_query_args = (order_id, good_name)
+    sql_query_args = (order_id, good_name)
     conn = None
 
     try:
@@ -67,11 +67,11 @@ def insert_good_in_order(good_name, order_id):
  
  
 if __name__ == '__main__':
-		args = parse_args()
+    args = parse_args()
 
-		print('Arguments got:', args)
+    print('Arguments got:', args)
 
     insert_good_in_order(
-    	good_name=args['good_name'],
-    	order_id=args['order_id']
+      good_name=args['good_name'],
+      order_id=args['order_id']
     )
