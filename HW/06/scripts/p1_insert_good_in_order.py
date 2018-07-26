@@ -55,7 +55,7 @@ def insert_good_in_order(good_name, order_id):
         print('Done!')
         print('Good "' + good_name + '"\'s' + ' id is ' + str(good_id) + '\n')
 
-        print('SQL query to be executed:' + '\n')
+        print('SQL query to be executed:')
         print(sql_query % sql_query_args)
 
         cur.execute(sql_query, sql_query_args)
