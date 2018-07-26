@@ -69,6 +69,6 @@ if __name__ == '__main__':
     print('Arguments got:', args)
 
     insert_good_in_order(
-      good_name=args['good_name'],
-      order_id=args['order_id']
+      good_name=args.good_name,
+      order_id=args.order_id
     )
