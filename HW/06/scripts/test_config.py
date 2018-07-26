@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/bin/python
 #
 # http://www.postgresqltutorial.com/postgresql-python/connect/
 #
