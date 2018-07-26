@@ -17,7 +17,6 @@ JOIN goods
 """
 
 def extract_all_orders_info():
-    sql_query_args = (quantity, order_id, good_name)
     conn = None
 
     try:
