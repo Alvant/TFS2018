@@ -6,12 +6,10 @@ import argparse
 import psycopg2
 from config import config
 
-sql_query = """INSERT INTO order_items
-VALUES (
-  DEFAULT,
-  %s,
-  (SELECT good_id FROM goods WHERE goods.name = %s),
-  1
+sql_query = """DELETE FROM order_items
+WHERE
+  order_id = %s AND
+  good_id = (SELECT good_id FROM goods WHERE goods.name = %s)
 )
 """
 
