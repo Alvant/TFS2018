@@ -1,1 +1,1 @@
-dos2unix ./../*.py
+dos2unix './*.py'
