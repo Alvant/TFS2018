@@ -114,7 +114,7 @@ for oi in OrderItem.select():
 print()
 
 good_to_be_deleted = OrderItem.select().where(
-  OrderItem.order.id == 1 & OrderItem.good.name == 'Needle').get()
+  (OrderItem.order.id == 1) & (OrderItem.good.name == 'Needle')).get()
 
 good_to_be_deleted.delete_instance()
 
