@@ -70,6 +70,8 @@ red_thread = Good(vendor='Good Threads Ltd.', name='Red thread', description='Hi
 red_thread.save()
 needle = Good(vendor='Good Threads Ltd.', name='Needle', description='Stainless steel')
 needle.save()
+cola = Good(vendor='The Coca-Cola Company', name='Coca-Cola', description='The holiday comes to us')
+cola.save()
 
 order = Order(customer=peter, order_dttm=date(2002, 4, 30), status='OK')
 order.save()
@@ -78,6 +80,34 @@ order_item_thread = OrderItem(order=order, good=red_thread, quantity=100)
 order_item_thread.save()
 order_item_needle = OrderItem(order=order, good=needle, quantity=2)
 order_item_needle.save()
+
+print('Tables created!')
+
+
+print('Query 1: Insert Good in Order')
+
+print('Before:')
+print('Order ID | Good')
+for oi in OrderItem.select():
+  print(oi.order.id, oi.good.name)
+
+print()
+
+order_item_cola = OrderItem(order=order, good=cola, quantity=2)
+order_item_cola.save()
+
+print('After:')
+print('Order ID | Good')
+for oi in OrderItem.select():
+  print(oi.order.id, oi.good.name)
+
+print()
+
+# Query 2: Delete Good from Order
+
+# Query 3: Update Quantity of Good in Order
+
+# Query 4: Extract All Orders' Info
 
 
 print('Finished!')
