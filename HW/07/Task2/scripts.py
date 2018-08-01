@@ -2,7 +2,7 @@ from __future__ import print_function
 
 from datetime import date
 
-import peewee
+from peewee import *
 from config import config
 
 
