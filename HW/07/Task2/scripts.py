@@ -152,7 +152,12 @@ print()
 print('Query 4: Extract All Orders\' Info\n')
 
 query = (Customer
-  .select(Customer, Order, OrderItem, Good)
+  .select(
+    Customer,
+    Order.id.alias('order_id'),
+    OrderItem.quantity.alias('orderitem_quantity'),
+    Good.name.alias('good_name'),
+    Good.vendor.alias('good_vendor'))
   .join(Order)
   .join(OrderItem)
   .join(Good)
@@ -162,14 +167,14 @@ print('Order ID | First Name | Last Name | Good | Vendor | Quantity')
 
 print(query)
 
-for customer in query:
+for customer in query.objects():
   print(
-    customer.order.id,
+    customer.order_id,
     customer.first_nm,
     customer.last_nm,
-    customer.good.name,
-    customer.good.vendor,
-    customer.orderitem.quantity
+    customer.good_name,
+    customer.good_vendor,
+    customer.orderitem_quantity
   )
 
 print()
