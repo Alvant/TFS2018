@@ -10,7 +10,7 @@ params = config()
 
 print('Connecting to the PostgreSQL database...')
 
-db = PostgresqlDatabase(**params)
+db = PostgresqlDatabase(dbname=params.dbname, port=params.port, user=params.user, password=params.password)
 
 print('Connected!' + '\n')
 
