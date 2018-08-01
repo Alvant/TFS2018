@@ -165,15 +165,18 @@ query = (Customer
 
 print('Order ID | First Name | Last Name | Good | Vendor | Quantity')
 
-print(query)
-
 for customer in query.objects():
   print(
     customer.order_id,
+    '|\t',
     customer.first_nm,
+    '|\t',
     customer.last_nm,
+    '|\t',
     customer.good_name,
+    '|\t',
     customer.good_vendor,
+    '|\t'
     customer.orderitem_quantity
   )
 
