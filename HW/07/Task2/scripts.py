@@ -11,7 +11,8 @@ params = config()
 print('Connecting to the PostgreSQL database...')
 
 db = PostgresqlDatabase(
-  dbname=params['dbname'],
+  params['dbname'],
+  host=params['host'],
   port=params['port'],
   user=params['user'],
   password=params['password']
