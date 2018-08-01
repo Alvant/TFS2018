@@ -81,10 +81,10 @@ order_item_thread.save()
 order_item_needle = OrderItem(order=order, good=needle, quantity=2)
 order_item_needle.save()
 
-print('Tables created!')
+print('Tables created!n')
 
 
-print('Query 1: Insert Good in Order')
+print('Query 1: Insert Good in Order\n')
 
 print('Before:')
 print('Order ID | Good')
@@ -103,7 +103,27 @@ for oi in OrderItem.select():
 
 print()
 
-# Query 2: Delete Good from Order
+
+print('Query 2: Delete Good from Order\n')
+
+print('Before:')
+print('Order ID | Good')
+for oi in OrderItem.select():
+  print(oi.order.id, oi.good.name)
+
+print()
+
+good_to_be_deleted = OrderItem.select().where(
+  OrderItem.order.id == 1 & OrderItem.good.name == 'Needle').get()
+
+good_to_be_deleted.delete_instance()
+
+print('After:')
+print('Order ID | Good')
+for oi in OrderItem.select():
+  print(oi.order.id, oi.good.name)
+
+print()
 
 # Query 3: Update Quantity of Good in Order
 
