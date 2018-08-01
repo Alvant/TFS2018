@@ -71,7 +71,7 @@ red_thread.save()
 needle = Good(vendor='Good Threads Ltd.', name='Needle', description='Stainless steel')
 needle.save()
 
-order = Order(customer=peter, date=date(2002, 4, 30), status='OK')
+order = Order(customer=peter, order_dttm=date(2002, 4, 30), status='OK')
 order.save()
 
 order_item_thread = OrderItem(order=order, good=red_thread, quantity=100)
