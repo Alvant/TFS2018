@@ -81,7 +81,7 @@ order_item_thread.save()
 order_item_needle = OrderItem(order=order, good=needle, quantity=2)
 order_item_needle.save()
 
-print('Tables created!n')
+print('Tables created!\n')
 
 
 print('Query 1: Insert Good in Order\n')
@@ -125,7 +125,28 @@ for oi in OrderItem.select():
 
 print()
 
-# Query 3: Update Quantity of Good in Order
+
+print('Query 3: Update Quantity of Good in Order\n')
+
+print('Before:')
+print('Order ID | Good')
+for oi in OrderItem.select():
+  print(oi.order.id, oi.good.name)
+
+print()
+
+order_item_to_be_updated = OrderItem.select().where(
+  (OrderItem.order == order) & (OrderItem.good == cola)).get()
+
+order_item_to_be_updated.quantity = 5
+order_item_to_be_updated.save()
+
+print('After:')
+print('Order ID | Good')
+for oi in OrderItem.select():
+  print(oi.order.id, oi.good.name)
+
+print()
 
 # Query 4: Extract All Orders' Info
 
