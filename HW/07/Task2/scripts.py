@@ -6,6 +6,12 @@ from peewee import *
 from config import config
 
 
+#  Before executing the program
+#  the tables (if they exist in database)
+#  should be deleted:
+#    drop table orderitem, "order", customer, good;
+
+
 params = config()
 
 print('Connecting to the PostgreSQL database...')
@@ -163,7 +169,7 @@ query = (Customer
   .join(Good)
 )
 
-print('Order ID', 'First Name', 'Last Name', 'Good', 'Vendor', 'Quantity', sep='\t')
+print('Order ID | First Name | Last Name | Good | Vendor | Quantity')
 
 for customer in query.objects():
   print(
