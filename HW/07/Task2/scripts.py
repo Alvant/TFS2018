@@ -153,7 +153,12 @@ print('Query 4: Extract All Orders\' Info\n')
 
 query = (Customer
   .select(Customer, Order, OrderItem, Good)
-  .where((Customer.id == Order.id) & (Order.id == OrderItem.id) & (OrderItem.id == Good.id))
+  .join(Order)
+  .where(Customer.id == Order.id)
+  .join(OrderItem)
+  .where(Order.id == OrderItem.id)
+  .join(Good)
+  .where(OrderItem.id == Good.id)
 )
 
 print('Order ID | First Name | Last Name | Good | Vendor | Quantity')
