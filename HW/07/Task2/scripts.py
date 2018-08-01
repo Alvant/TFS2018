@@ -6,6 +6,8 @@ from peewee import *
 from config import config
 
 
+params = config()
+
 print('Connecting to the PostgreSQL database...')
 
 db = PostgresqlDatabase(**params)
