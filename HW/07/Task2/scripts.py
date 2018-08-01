@@ -163,7 +163,7 @@ query = (Customer
   .join(Good)
 )
 
-print('Order ID | First Name | Last Name | Good | Vendor | Quantity')
+print('Order ID', 'First Name', 'Last Name', 'Good', 'Vendor', 'Quantity', sep='\t')
 
 for customer in query.objects():
   print(
