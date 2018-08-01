@@ -129,9 +129,9 @@ print()
 print('Query 3: Update Quantity of Good in Order\n')
 
 print('Before:')
-print('Order ID | Good')
+print('Order ID | Good | Quantity')
 for oi in OrderItem.select():
-  print(oi.order.id, oi.good.name)
+  print(oi.order.id, oi.good.name, oi.quantity)
 
 print()
 
@@ -142,13 +142,33 @@ order_item_to_be_updated.quantity = 5
 order_item_to_be_updated.save()
 
 print('After:')
-print('Order ID | Good')
+print('Order ID | Good | Quantity')
 for oi in OrderItem.select():
-  print(oi.order.id, oi.good.name)
+  print(oi.order.id, oi.good.name, oi.quantity)
 
 print()
 
-# Query 4: Extract All Orders' Info
+
+print('Query 4: Extract All Orders\' Info\n')
+
+query = (Customer
+  .select(Customer, Order, OrderItem, Good)
+  .where((Customer.id == Order.id) & (Order.id == OrderItem.id) & (OrderItem.id == Good.id))
+)
+
+print('Order ID | First Name | Last Name | Good | Vendor | Quantity')
+
+for customer in query:
+  print(
+    customer.order.id,
+    customer.first_nm,
+    customer.last_nm,
+    customer.good.name,
+    customer.good.vendor,
+    customer.orderitem.quantity
+  )
+
+print()
 
 
 print('Finished!')
