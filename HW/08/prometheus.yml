@@ -27,4 +27,4 @@ scrape_configs:
 
     scrape_interval: 5s
     static_configs:
-    - targets: ['localhost:9100','localhost:9090']
+    - targets: ['localhost:9090','localhost:9100','localhost:9117']
