@@ -1,0 +1,23 @@
+---
+- name: Install Apache Server Ubuntu
+  package:
+    name: apache2
+    state: present # default
+  when: ansible_distribution == "Ubuntu"
+
+- name: Install Apache Server CentOS
+  package:
+    name: httpd
+    state: present # default
+  when: ansible_distribution == "CentOS"
+
+- name: Install Apache Server
+  package:
+    name: "{{ item }}"
+    state: present # default
+  loop:
+    - httpd
+    - mod_wsgi
+    - mod_ssl
+    - mod_proxy_uwsgi
+  when: ansible_distribution == "CentOS"
