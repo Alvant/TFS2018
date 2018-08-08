@@ -1,13 +1,47 @@
 - name: Install PostgreSQL
   yum:
-    name: postgresql-server
+    name: {{ item }}
     state: present
+    loop:
+      - python-psycopg2
+      - postgresql-server
+      - postgresql
+
 
 - name: Get DB Exist status
   stat:
     path: "{{ postgres_data_dir }}/PG_VERSION"
   register: pgdata
 
+
 - name: Ensure that PostgreSQL Database Is Initialized
   command: "sudo -u postgres bash -c 'initdb -D {{ postgres_data_dir }}'"
   when: not pgdata.stat.exists
+
+
+- name: Configure PostgreSQL
+  template:
+    src: var/lib/pgsql/data/postgresql.conf.j2
+    dest: "{{ postgres_data_dir }}/postgresql.conf"
+    owner: postgres
+    group: postgres
+    mode: 644
+  template:
+    src: var/lib/pgsql/data/pg_hba.conf.j2
+    dest: "{{ postgres_data_dir }}/pg_hba.conf"
+    owner: postgres
+    group: postgres
+    mode: 644
+
+
+- name: Install python-pip
+  yum:
+    name: python-pip
+    state: present
+
+
+- name: Ensure that PostgreSQL Service Is Running
+  service: 
+    name: postgresql
+    state: started
+    enabled: yes
