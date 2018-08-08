@@ -1,0 +1,13 @@
+- name: Install PostgreSQL
+  yum:
+    name: postgresql-server
+    state: present
+
+- name: Get DB Exist status
+  stat:
+    path: "{{ postgres_data_dir }}/PG_VERSION"
+  register: pgdata
+
+- name: Ensure that PostgreSQL Database Is Initialized
+  command: "sudo -u postgres bash -c 'initdb -D {{ postgres_data_dir }}'"
+  when: not pgdata.stat.exists
