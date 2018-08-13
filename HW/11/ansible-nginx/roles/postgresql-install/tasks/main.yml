@@ -21,17 +21,14 @@
 
 - name: Configure PostgreSQL
   template:
-    src: var/lib/pgsql/data/postgresql.conf.j2
-    dest: "{{ postgres_data_dir }}/postgresql.conf"
+    src: {{ item.0 }}
+    dest: "{{ postgres_data_dir }}/{{ item.1 }}"
     owner: postgres
     group: postgres
     mode: 644
-  template:
-    src: var/lib/pgsql/data/pg_hba.conf.j2
-    dest: "{{ postgres_data_dir }}/pg_hba.conf"
-    owner: postgres
-    group: postgres
-    mode: 644
+  loop:
+      - [ 'var/lib/pgsql/data/postgresql.conf.j2', 'postgresql.conf' ]
+      - [ 'var/lib/pgsql/data/pg_hba.conf.j2', 'pg_hba.conf' ]
 
 
 - name: Install python-pip
