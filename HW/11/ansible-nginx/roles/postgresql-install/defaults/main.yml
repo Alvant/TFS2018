@@ -1,3 +1,4 @@
+---
 postgres_work_mem: 32MB
 postgres_shared_buffers: 512MB
 

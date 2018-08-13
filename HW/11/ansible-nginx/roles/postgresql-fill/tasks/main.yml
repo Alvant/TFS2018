@@ -1,0 +1,27 @@
+---
+- name: Create Management User
+  postgresql_user:
+    name: postgres
+    password: "{{ postgres_postgres_password }}"
+
+
+- name: Create Database
+  postgresql_db:
+    name: "{{ postgres_test_db }}"
+    encoding: UTF-8
+
+
+- name: Create Test User
+  postgresql_user:
+    name: "{{ postgres_test_username }}"
+    password: "{{ postgres_test_user_password }}"
+
+
+- name: Grant Privileges
+  postgresql_privs:
+    database: "{{ postgres_test_db }}"
+    grant_option: yes
+    privs: ALL
+    type: database
+    role: "{{ postgres_test_username }}"
+
