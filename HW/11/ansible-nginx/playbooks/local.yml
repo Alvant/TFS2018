@@ -1,0 +1,21 @@
+#! /usr/bin/env ansible-playbook
+---
+- name: Install nginx
+  hosts: local
+  become: true
+  roles:
+    - nginx
+
+
+- name: Install PostgreSQL
+  hosts: local
+  become: true
+  roles:
+    - postgresql-install
+
+
+- name: Fill PostgreSQL with Data
+  hosts: local
+  become: true
+  roles:
+    - postgresql-fill
