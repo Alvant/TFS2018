@@ -56,7 +56,7 @@
 
 # - Connection Settings -
 
-listen_addresses = "{{ postgres_listen_interface }}"
+listen_addresses = {{ postgres_listen_interface }}
 port = {{ postgres_listen_port }}
 # Note: In RHEL/Fedora installations, you can't set the port number here;
 # adjust it in the service file instead.
