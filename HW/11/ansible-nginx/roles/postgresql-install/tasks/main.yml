@@ -3,10 +3,10 @@
   yum:
     name: "{{ item }}"
     state: present
-    loop:
-      - python-psycopg2
-      - postgresql-server
-      - postgresql
+  loop:
+    - python-psycopg2
+    - postgresql-server
+    - postgresql
 
 
 - name: Get Database Exist Status
