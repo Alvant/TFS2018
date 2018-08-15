@@ -81,4 +81,6 @@
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 
 local   all             postgres                                trust
-host    all             all             localhost               trust
+host    dj              dj             localhost                md5
+host    dj              dj             127.0.0.1/32             md5
+host    dj              dj             ::1/128                  md5
