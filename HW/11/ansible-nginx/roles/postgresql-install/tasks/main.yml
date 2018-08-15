@@ -1,7 +1,7 @@
 ---
 - name: Install PostgreSQL
   yum:
-    name: {{ item }}
+    name: "{{ item }}"
     state: present
     loop:
       - python-psycopg2
@@ -22,7 +22,7 @@
 
 - name: Configure PostgreSQL
   template:
-    src: {{ item.0 }}
+    src: "{{ item.0 }}"
     dest: "{{ postgres_data_dir }}/{{ item.1 }}"
     owner: postgres
     group: postgres
