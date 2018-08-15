@@ -1,3 +1,5 @@
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-centos-7
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-django-web-framework-on-centos-7
+
+https://www.tricksofthetrades.net/2017/10/02/ansible-local-playbooks/
