@@ -5,3 +5,17 @@
   become: true
   roles:
     - nginx
+
+
+- name: Install PostgreSQL
+  hosts: webservers
+  become: true
+  roles:
+    - postgresql-install
+
+
+- name: Fill PostgreSQL with Data
+  hosts: webservers
+  become: true
+  roles:
+    - postgresql-fill
