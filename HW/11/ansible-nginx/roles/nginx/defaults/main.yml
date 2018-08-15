@@ -7,6 +7,6 @@ nginx_user: www-data
 nginx_worker_proceses: 4
 nginx_worker_connections: 200
 nginx_sites:
-  - "{{ inventory_hostname }}"
+  - s-1.fintech-admin.m1.tinkoff.cloud
   - localhost
 nginx_sites_location: /var/www/html

@@ -42,7 +42,7 @@
 - name: Put index.html to sites
   copy:
     src: files/test-website/index.html
-    dest: "{{ nginx_sites_location }}/{{ inventory_hostname }}/index.html"
+    dest: "{{ nginx_sites_location }}/s-1.fintech-admin.m1.tinkoff.cloud/index.html"
     owner: "{{ nginx_user }}"
     group: "{{ nginx_user }}"
     mode: 0644
