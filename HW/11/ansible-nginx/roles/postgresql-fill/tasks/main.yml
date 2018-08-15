@@ -29,3 +29,8 @@
     type: database
     role: "{{ postgres_test_username }}"
 
+
+- name: Reload postgresql_privs
+  service: 
+    name: postgresql
+    state: reloaded
