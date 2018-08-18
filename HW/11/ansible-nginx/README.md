@@ -1,3 +1,3 @@
 # ansible-nginx
 
-Учебный ansible-репозиторий с ролью nginx 
+Ansible-репозиторий с ролями nginx & postgresql
