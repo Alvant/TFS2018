@@ -1,0 +1,16 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/sbin
+%dir /usr/lib/debug/.build-id
+%dir /usr/lib/debug/.build-id/dd
+%dir /usr/lib/debug/.build-id/e4
+%dir /usr/lib/debug/.dwz
+/usr/lib/debug/usr/sbin/nginx.debug
+/usr/lib/debug/usr/sbin/nginx-debug.debug
+/usr/lib/debug/.build-id/dd/380e82bc5969ebd5bb391af82d2dcf7167006f
+/usr/lib/debug/.build-id/dd/380e82bc5969ebd5bb391af82d2dcf7167006f.debug
+/usr/lib/debug/.build-id/e4/0cee206f80297550e2ec3c14dafdee98d31557
+/usr/lib/debug/.build-id/e4/0cee206f80297550e2ec3c14dafdee98d31557.debug
+/usr/lib/debug/.build-id/e4/31034335563dc670a353d65721529fe848090a.debug
+/usr/lib/debug/.dwz/nginx-1.14.0-1.el7_4.ngx_ft2.x86_64
+/usr/src/debug/nginx-1.14.0
