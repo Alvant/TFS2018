@@ -1,0 +1,23 @@
+---
+version: '3.6'
+
+services:
+  db:
+    image: postgres
+    ports:
+      - 8003:5432
+    volumes:
+      - postgres_data:/var/lib/pgsql/data
+  web:
+    build: .
+    # command: uwsgi --chdir=/opt/code --virtualenv=/opt/code/djangoenv --http 0.0.0.0:8000 --wsgi-file /opt/code/addressbook/wsgi.py --processes=5 --master --vacuum --max-requests=5000
+    command: python /opt/code/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - 8004:8000
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
