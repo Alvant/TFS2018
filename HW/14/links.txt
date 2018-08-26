@@ -1,0 +1,3 @@
+* https://wsvincent.com/django-docker-postgresql/
+* https://stackoverflow.com/questions/37694987/connecting-to-postgresql-in-a-docker-container-from-outside
+* https://medium.com/@lvthillo/connect-from-local-machine-to-postgresql-docker-container-f785f00461a7
